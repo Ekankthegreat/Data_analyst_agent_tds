@@ -62,7 +62,7 @@ def fetch_webpage_text(url: str) -> str:
     except Exception as e:
         return f"[Error fetching {url}: {str(e)}]"
 
-@app.post("/api/")
+@app.post("/")
 async def process_question(
     question: str = Form(...),
     files: Optional[List[UploadFile]] = File(None),
@@ -104,3 +104,4 @@ async def process_question(
 
     except Exception as e:
         return JSONResponse(status_code=400, content={"error": str(e)})
+
