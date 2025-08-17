@@ -8,6 +8,5 @@ matplotlib
 pillow
 beautifulsoup4
 lxml
-openpyxl
 python-multipart
 google-generativeai
